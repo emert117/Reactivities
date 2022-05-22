@@ -1,0 +1,12 @@
+dotnet new classlib -n Persistence
+dotnet new webapi -n API
+dotnet add reference ../Domain
+dotnet new sln
+dotnet sln add Domain
+dotnet sln list
+
+dotnet --info
+dotnet --list-sdks
+
+dotnet run
+dotnet watch run
