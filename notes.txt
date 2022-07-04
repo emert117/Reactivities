@@ -8,5 +8,12 @@ dotnet sln list
 dotnet --info
 dotnet --list-sdks
 
+dotnet build
 dotnet run
 dotnet watch run
+
+dotnet tool list
+dotnet tool install --global dotnet-ef --version 6.0.6
+dotnet-ef
+dotnet-ef migrations add InitialCreate -p .\Persistence\ -s .\API\
+dotnet-ef database update
